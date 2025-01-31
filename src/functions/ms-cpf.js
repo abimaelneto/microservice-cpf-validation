@@ -52,7 +52,7 @@ function validateCPF(cpf) {
 
 app.http('ms-cpf', {
     methods: ['GET', 'POST'],
-    authLevel: 'anonymous',
+    authLevel: 'function',
     handler: async (request, context) => {
         try {
             if (request.method === 'POST') {
